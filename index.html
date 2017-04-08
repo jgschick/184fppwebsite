@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CS 184 Final Project Proposal</title>
+<style>
+body {
+	background-color: #FFFFF5;
+}
+h {
+    /* Title */
+    text-align: center;
+	font-family: sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 48px;
+	line-height: 100%;
+	color: #2050AA;
+	opacity: 1.00;
+} 
+ns {
+	/* Names! */
+    text-align: center;
+	font-family: sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 24px;
+	line-height: 100%;
+	color: #333333;
+	opacity: 1.00;
+}
+p {
+    /* Paragraphs go here blablabla */
+    padding: 10px;
+	font-family: sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 100%;
+	color: #333333;
+	opacity: 1.00;
+} 
+
+</style>
+</head>
+<body>
+	<center>
+	<h>CS 184 Final Project Proposal: Augmented MPM Melting Simulation <br></h>
+	<ns>Group members: Shun Hu and Jennifer Schick <br> </ns> </center>
+	<p>
+	<b>Title, Summary and Team Members</b><br>
+	Our project, Augmented MPM Melting Simulation, is a hybrid FLIP and MPM material simulator that simulates realistic temperature and phase change in freezing liquids and melting solids. To simulate the melting and freezing of materials, we will use an augmented MPM (material point method) developed by UCLA and Disney Animation Studios. In this method, the material is represented by material points that stores its properties, but they are rasterized into MAC (marker-and-cell) grids to calculate their changes. Our group members are Shun "Felix" Hu and Jennifer "J" Schick.
+	</p>
+	<p>
+	<b>Problem Description<br></b>
+	We are simulating the process of melting and freezing. This is an important aspect of the physical world and it's really interesting if we can simulate different materials going through this process. The most challenging part is that we are not given a starting code, we have to find all the platforms and modules to fit in the project. We are also not experienced enough to estimate the time the programme takes on the computer, thus the result we can achieve might not be as good as expected. To solve the problem, we will break down the project into a pipeline of procedures, taking guidance from the paper on augmented MPM from UCLA and Disney Animation Studios, and try to think up a way to test the correctness and efficiency of each section. Another problem is that most of the detailed physics process and modeling strategy is not familiar to us so we have to rely heavily on the information given in published papers. </p>
+
+	<p><b>Goals and Deliverables
+	<br></b> The baseline plan delivers the non-interactive animation of the melting process of an object. This object is rendered as MPM particles coloured by temperature, as demonstrated in the paper. Its performance is measured by the plausibility of the simulation. We might encounter some sections with no available modules and too hard to code. In this case, we'll email the TAs for help.
+	The aspirational plan delivers the same kind of animation of objects of different materials and textures. In this case, the plausibility standard should also include how much the melting behavior fits the expectation of the material indicated by the texture.
+	In our analysis, we hope to be able to assess how realistic our simulation is and also how much time it takes to complete physical computations and render on various systems.
+	</p>
+
+	<p><b>Schedule<br></b>
+		By Friday, April 14:
+		Become familiar with Mitsuba renderer and some underlying physics,
+		create project skeleton (file/code plan in comments), and
+		implement non-augmented MPM (solid representation).<br>
+		By Friday, April 21 (Graded Milestone):
+		implement MPM heat representation and
+		add FLIP representation (liquid phases). <br>
+		By Friday: April 28: 
+		Continue implementing MPM heat representation and
+		combine representations. <br>
+		By Friday, May 5:
+		Finish bug fixes,
+		create final product (gif/video of final simulation), and
+		work on extra features, if possible.</p>
+
+	<p><b>Resources<br></b>
+		<u>Computing details</u><br>
+		Platform: Windows, Mac, Linux <br> 
+		rendering software: http://mitsuba-renderer.org/<br>
+		hardware: personal laptops (mid-grade) and instructional machines<br>
+		<u>Resources:</u><br>
+		<a href=http://alexey.stomakhin.com/research/siggraph2014_melt.pdf>Main inspiration/guide</a> <br>
+		<a href=https://nccastaff.bournemouth.ac.uk/jmacey/MastersProjects/MSc12/Ioannidis/Thesis.pdf>FLIP paper</a><br>
+		<a href=https://www.cs.ubc.ca/~rbridson/docs/zhu-siggraph05-sandfluid.pdf >PIC/FLIP paper</a> <br>
+		Other resources may be found along the way and will be cited in the final report <br>
+
+	</p>
+
+</body>
+</html>
